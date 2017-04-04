@@ -7,6 +7,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <sstream>
 #include "KeyValue.hpp"
 
 
@@ -20,6 +21,8 @@ public:
     void add(K keyValue, W word);
     void printDict() const;
     void removeByIndex(int n);
+    std::string getByIndex(int n) const;
+    std::string getByKey(const K&) const;
 private:
     int m_size;
     std::vector< KeyValue<K> > m_list;
@@ -80,7 +83,7 @@ void Dictionary<K, W>::removeByIndex(int n) {
 
 template<typename K, typename W>
 bool Dictionary<K, W>::isValid(int n) {
-    return (m_list.size() > n);
+    return (m_list.size() > n && n > 0);
 }
 
 template<typename K, typename W>
@@ -88,8 +91,38 @@ bool Dictionary<K, W>::isValid() {
     return (m_list.size() > 0);
 }
 
-int Dictionary::getCount() {
-    return m_list.size();
+//returns total words + keyValues currently.
+template<typename K, typename W>
+int Dictionary<K, W>::getCount() const {
+    auto sum = 0;
+    for(auto i = 0; i < m_list.size(); i++) {
+        sum += m_list[i].getCount();
+    }
+    return m_list.size() + sum;
+}
+
+template<typename K, typename W>
+std::string Dictionary<K, W>::getByKey(const K& k) const {
+    std::ostringstream os;
+    bool found = false;
+    for(auto i = 0; i < m_list.size(); i++) {
+        if(m_list[i].getKeyValue() == k) {
+            for(auto j = 0; j < m_list[i].getCount(); j++) {
+                os << m_list[i].getWordByIndex(0);
+                found = true;
+            }
+        }
+
+    }
+    if(!found) {
+        return "not_found";
+    }
+    return os.str();
+}
+
+template<typename K, typename W>
+std::string Dictionary<K, W>::getByIndex(int n) const {
+    return std::string();
 };
 
 #endif //HW6_GENERICS_DICTIONARY_HPP

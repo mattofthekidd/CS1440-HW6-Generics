@@ -90,6 +90,12 @@
 		<Unit filename="/Users/kidma/CLionProjects/CS1440/HW6-Generics/KeyValue.hpp">
 			<Option target="HW6_Generics"/>
 		</Unit>
+		<Unit filename="/Users/kidma/CLionProjects/CS1440/HW6-Generics/Menu.cpp">
+			<Option target="HW6_Generics"/>
+		</Unit>
+		<Unit filename="/Users/kidma/CLionProjects/CS1440/HW6-Generics/Menu.hpp">
+			<Option target="HW6_Generics"/>
+		</Unit>
 		<Unit filename="/Users/kidma/CLionProjects/CS1440/HW6-Generics/main.cpp">
 			<Option target="HW6_Generics"/>
 		</Unit>

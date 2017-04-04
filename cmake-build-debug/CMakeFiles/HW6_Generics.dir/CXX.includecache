@@ -19,6 +19,8 @@ vector
 -
 iostream
 -
+sstream
+-
 KeyValue.hpp
 /Users/kidma/CLionProjects/CS1440/HW6-Generics/KeyValue.hpp
 
@@ -34,8 +36,22 @@ vector
 iostream
 -
 
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/Menu.cpp
+Menu.hpp
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/Menu.hpp
+Dictionary.hpp
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/Dictionary.hpp
+
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/Menu.hpp
+iostream
+-
+Dictionary.hpp
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/Dictionary.hpp
+
 /Users/kidma/CLionProjects/CS1440/HW6-Generics/main.cpp
 iostream
+-
+sstream
 -
 string
 -
@@ -43,4 +59,6 @@ Dictionary.hpp
 /Users/kidma/CLionProjects/CS1440/HW6-Generics/Dictionary.hpp
 KeyValue.hpp
 /Users/kidma/CLionProjects/CS1440/HW6-Generics/KeyValue.hpp
+Menu.hpp
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/Menu.hpp
 

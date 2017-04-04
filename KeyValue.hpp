@@ -14,8 +14,9 @@ template <typename T>
 class KeyValue {
 public:
     KeyValue(T, std::string);
-    T getKeyValue() { return m_keyValue; }
-    std::string getWordByIndex(int n);
+    std::string getKeyValue() const { return m_keyValue; }
+    std::string getWordByIndex(int n) const;
+    int getCount() const;
     void addWord(const std::string&);
     friend std::ostream& operator<< <T>(std::ostream&, const KeyValue<T>&);
 
@@ -32,13 +33,18 @@ m_keyValue(t)
 }
 
 template <typename T>
-std::string KeyValue<T>::getWordByIndex(int n) {
-    return m_words[n];
+std::string KeyValue<T>::getWordByIndex(int n) const {
+    return m_words.at(n);
 }
 
 template <typename T>
 void KeyValue<T>::addWord(const std::string& x) {
     m_words.push_back(x);
+}
+
+template <typename T>
+int KeyValue<T>::getCount() const {
+    return m_words.size();
 }
 
 template <typename T>
@@ -49,6 +55,7 @@ std::ostream& operator<<(std::ostream& os, const KeyValue<T>& x) {
     }
     return os;
 }
+
 
 
 #endif //HW6_GENERICS_KEYVALUE_HPP
