@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/Dictionary.cpp
+Dictionary.hpp
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/Dictionary.hpp
+KeyValue.hpp
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/KeyValue.hpp
+
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/Dictionary.hpp
+string
+-
+vector
+-
+iostream
+-
+KeyValue.hpp
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/KeyValue.hpp
+
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/KeyValue.cpp
+KeyValue.hpp
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/KeyValue.hpp
+
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/KeyValue.hpp
+string
+-
+vector
+-
+iostream
+-
+
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/main.cpp
+iostream
+-
+string
+-
+Dictionary.hpp
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/Dictionary.hpp
+KeyValue.hpp
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/KeyValue.hpp
+
