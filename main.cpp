@@ -24,6 +24,11 @@ typedef Dictionary<std::string, std::string> dict;
     }
 
     Menu menu(myDictionary);
+    myDictionary->add("Hair color", "Blonde");
+    myDictionary->add("Eye color", "Blue");
+    myDictionary->add("Favorite Movie", "Rogue One");
+    myDictionary->add("Favorite Food", "Pizza");
+    myDictionary->add("Favorite Class", "Lunch");
     menu.listOptions();
     return 0;
 }

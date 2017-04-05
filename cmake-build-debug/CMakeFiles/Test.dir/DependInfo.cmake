@@ -6,9 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/kidma/CLionProjects/CS1440/HW6-Generics/Menu.cpp" "/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles/Test.dir/Menu.cpp.o"
   "/Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/DictionaryTester.cpp" "/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o"
-  "/Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/KeyValueTester.cpp" "/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o"
   "/Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/testMain.cpp" "/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles/Test.dir/Testing/testMain.cpp.o"
-  "/Users/kidma/CLionProjects/CS1440/HW6-Generics/main.cpp" "/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles/Test.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

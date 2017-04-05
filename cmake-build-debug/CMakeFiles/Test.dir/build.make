@@ -57,28 +57,28 @@ include CMakeFiles/Test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Test.dir/flags.make
 
-CMakeFiles/Test.dir/main.cpp.o: CMakeFiles/Test.dir/flags.make
-CMakeFiles/Test.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/main.cpp.o -c /Users/kidma/CLionProjects/CS1440/HW6-Generics/main.cpp
+CMakeFiles/Test.dir/Testing/testMain.cpp.o: CMakeFiles/Test.dir/flags.make
+CMakeFiles/Test.dir/Testing/testMain.cpp.o: ../Testing/testMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test.dir/Testing/testMain.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Testing/testMain.cpp.o -c /Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/testMain.cpp
 
-CMakeFiles/Test.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kidma/CLionProjects/CS1440/HW6-Generics/main.cpp > CMakeFiles/Test.dir/main.cpp.i
+CMakeFiles/Test.dir/Testing/testMain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/Testing/testMain.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/testMain.cpp > CMakeFiles/Test.dir/Testing/testMain.cpp.i
 
-CMakeFiles/Test.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kidma/CLionProjects/CS1440/HW6-Generics/main.cpp -o CMakeFiles/Test.dir/main.cpp.s
+CMakeFiles/Test.dir/Testing/testMain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/Testing/testMain.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/testMain.cpp -o CMakeFiles/Test.dir/Testing/testMain.cpp.s
 
-CMakeFiles/Test.dir/main.cpp.o.requires:
+CMakeFiles/Test.dir/Testing/testMain.cpp.o.requires:
 
-.PHONY : CMakeFiles/Test.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/Test.dir/Testing/testMain.cpp.o.requires
 
-CMakeFiles/Test.dir/main.cpp.o.provides: CMakeFiles/Test.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/Test.dir/main.cpp.o.provides
+CMakeFiles/Test.dir/Testing/testMain.cpp.o.provides: CMakeFiles/Test.dir/Testing/testMain.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/testMain.cpp.o.provides.build
+.PHONY : CMakeFiles/Test.dir/Testing/testMain.cpp.o.provides
 
-CMakeFiles/Test.dir/main.cpp.o.provides.build: CMakeFiles/Test.dir/main.cpp.o
+CMakeFiles/Test.dir/Testing/testMain.cpp.o.provides.build: CMakeFiles/Test.dir/Testing/testMain.cpp.o
 
 
 CMakeFiles/Test.dir/Menu.cpp.o: CMakeFiles/Test.dir/flags.make
@@ -105,33 +105,9 @@ CMakeFiles/Test.dir/Menu.cpp.o.provides: CMakeFiles/Test.dir/Menu.cpp.o.requires
 CMakeFiles/Test.dir/Menu.cpp.o.provides.build: CMakeFiles/Test.dir/Menu.cpp.o
 
 
-CMakeFiles/Test.dir/Testing/testMain.cpp.o: CMakeFiles/Test.dir/flags.make
-CMakeFiles/Test.dir/Testing/testMain.cpp.o: ../Testing/testMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Test.dir/Testing/testMain.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Testing/testMain.cpp.o -c /Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/testMain.cpp
-
-CMakeFiles/Test.dir/Testing/testMain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/Testing/testMain.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/testMain.cpp > CMakeFiles/Test.dir/Testing/testMain.cpp.i
-
-CMakeFiles/Test.dir/Testing/testMain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/Testing/testMain.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/testMain.cpp -o CMakeFiles/Test.dir/Testing/testMain.cpp.s
-
-CMakeFiles/Test.dir/Testing/testMain.cpp.o.requires:
-
-.PHONY : CMakeFiles/Test.dir/Testing/testMain.cpp.o.requires
-
-CMakeFiles/Test.dir/Testing/testMain.cpp.o.provides: CMakeFiles/Test.dir/Testing/testMain.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/testMain.cpp.o.provides.build
-.PHONY : CMakeFiles/Test.dir/Testing/testMain.cpp.o.provides
-
-CMakeFiles/Test.dir/Testing/testMain.cpp.o.provides.build: CMakeFiles/Test.dir/Testing/testMain.cpp.o
-
-
 CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o: ../Testing/DictionaryTester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o -c /Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/DictionaryTester.cpp
 
 CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.i: cmake_force
@@ -153,49 +129,21 @@ CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o.provides: CMakeFiles/Test.dir
 CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o.provides.build: CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o
 
 
-CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o: CMakeFiles/Test.dir/flags.make
-CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o: ../Testing/KeyValueTester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o -c /Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/KeyValueTester.cpp
-
-CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/KeyValueTester.cpp > CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.i
-
-CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/KeyValueTester.cpp -o CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.s
-
-CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o.requires:
-
-.PHONY : CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o.requires
-
-CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o.provides: CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o.provides.build
-.PHONY : CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o.provides
-
-CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o.provides.build: CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o
-
-
 # Object files for target Test
 Test_OBJECTS = \
-"CMakeFiles/Test.dir/main.cpp.o" \
-"CMakeFiles/Test.dir/Menu.cpp.o" \
 "CMakeFiles/Test.dir/Testing/testMain.cpp.o" \
-"CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o" \
-"CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o"
+"CMakeFiles/Test.dir/Menu.cpp.o" \
+"CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o"
 
 # External object files for target Test
 Test_EXTERNAL_OBJECTS =
 
-Test: CMakeFiles/Test.dir/main.cpp.o
-Test: CMakeFiles/Test.dir/Menu.cpp.o
 Test: CMakeFiles/Test.dir/Testing/testMain.cpp.o
+Test: CMakeFiles/Test.dir/Menu.cpp.o
 Test: CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o
-Test: CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o
 Test: CMakeFiles/Test.dir/build.make
 Test: CMakeFiles/Test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -203,11 +151,9 @@ CMakeFiles/Test.dir/build: Test
 
 .PHONY : CMakeFiles/Test.dir/build
 
-CMakeFiles/Test.dir/requires: CMakeFiles/Test.dir/main.cpp.o.requires
-CMakeFiles/Test.dir/requires: CMakeFiles/Test.dir/Menu.cpp.o.requires
 CMakeFiles/Test.dir/requires: CMakeFiles/Test.dir/Testing/testMain.cpp.o.requires
+CMakeFiles/Test.dir/requires: CMakeFiles/Test.dir/Menu.cpp.o.requires
 CMakeFiles/Test.dir/requires: CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o.requires
-CMakeFiles/Test.dir/requires: CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o.requires
 
 .PHONY : CMakeFiles/Test.dir/requires
 

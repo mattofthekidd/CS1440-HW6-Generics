@@ -11,8 +11,6 @@
 #include <sstream>
 #include "KeyValue.hpp"
 
-
-
 template <typename K, typename W>
 class Dictionary {
 public:
@@ -25,11 +23,11 @@ public:
     void removeByKey(const K& k);
     std::string getByIndex(int n) const;
     std::string getByKey(const K&) const;
+    int getCapacity() const { return m_list.capacity(); }
 private:
-    int m_count;
+    int m_count = 0;
     std::vector< KeyValueTester<K> > m_list;
     bool isEqual(const K& lhs, const K& rhs)const;
-    bool isValid(int n);
     bool isValid();
     void determineSize();
 };
@@ -47,6 +45,9 @@ Dictionary<K, W>::Dictionary(int n) {
 template<typename K, typename W>
 void Dictionary<K, W>::add(K keyValue, W word) {
     bool unique = true;
+    if (m_list.capacity() <= m_list.size()) {
+        m_list.reserve(m_list.capacity()*2);
+    }
     int pos = 0;
     if(isValid()) {
         for (auto i = 0; i < m_list.size() - 1; i++) {
@@ -67,6 +68,7 @@ void Dictionary<K, W>::add(K keyValue, W word) {
         KeyValueTester<K> temp(keyValue, word);
         m_list.push_back(temp);
     }
+    determineSize();
 };
 
 template<typename K, typename W>
@@ -78,24 +80,23 @@ void Dictionary<K, W>::printDict() const {
 
 template<typename K, typename W>
 void Dictionary<K, W>::removeByIndex(int n) {
-    if(isValid(n)) {
-        m_list.erase(m_list.begin()+(n-1));
+    if(m_list.size() >= n && n >= 0) {
+        m_list.erase(m_list.begin()+(n));
+        determineSize();
     }
 }
 
+//remove
 template<typename K, typename W>
 void Dictionary<K, W>::removeByKey(const K &k) {
     for(auto i = 0; i < m_list.size(); i++) {
         if(isEqual(m_list[i].getKeyValue(), k)) {
-            m_list.erase(m_list.begin()+(i));
+            removeByIndex(i);
+            break;
         }
     }
 };
 
-template<typename K, typename W>
-bool Dictionary<K, W>::isValid(int n) {
-    return (m_list.size() > n && n > 0);
-}
 
 template<typename K, typename W>
 bool Dictionary<K, W>::isValid() {
@@ -105,8 +106,7 @@ bool Dictionary<K, W>::isValid() {
 //returns total keyValues
 template<typename K, typename W>
 int Dictionary<K, W>::getCount() const {
-
-    return m_list.size();
+    return m_count;
 }
 
 template<typename K, typename W>
@@ -116,8 +116,7 @@ std::string Dictionary<K, W>::getByKey(const K& k) const {
     for(auto i = 0; i < m_list.size(); i++) {
         if(isEqual(m_list[i].getKeyValue(), k)) {
             for(auto j = 0; j < m_list[i].getCount(); j++) {
-                os << m_list[i].getWordByIndex(j) << "\n";
-
+                os << m_list[i].getWordByIndex(j);
                 found = true;
             }
         }
@@ -144,12 +143,14 @@ bool Dictionary<K, W>::isEqual(const K& lhs, const K& rhs)const {
 
 template<typename K, typename W>
 void Dictionary<K, W>::determineSize() {
-    int temp = m_count;
+    int temp = m_list.size();
     for(auto i = 0; i < m_list.size(); i++) {
-        if(m_list[i].size() > 1) {
-            temp += m_list[i].size();
+        if(m_list.at(i).getCount() != 1) {
+            temp += m_list.at(i).getCount() - 1;
         }
     }
+    //std::cout << temp << "  " << m_count << std::endl;
+    m_count = temp;
 }
 
 

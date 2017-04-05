@@ -140,17 +140,10 @@
 		<Unit filename="/Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/DictionaryTester.hpp">
 			<Option target="Test"/>
 		</Unit>
-		<Unit filename="/Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/KeyValueTester.cpp">
-			<Option target="Test"/>
-		</Unit>
-		<Unit filename="/Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/KeyValueTester.hpp">
-			<Option target="Test"/>
-		</Unit>
 		<Unit filename="/Users/kidma/CLionProjects/CS1440/HW6-Generics/Testing/testMain.cpp">
 			<Option target="Test"/>
 		</Unit>
 		<Unit filename="/Users/kidma/CLionProjects/CS1440/HW6-Generics/main.cpp">
-			<Option target="Test"/>
 			<Option target="GenericDictionary"/>
 		</Unit>
 		<Unit filename="/Users/kidma/CLionProjects/CS1440/HW6-Generics/CMakeLists.txt">

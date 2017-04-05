@@ -7,12 +7,11 @@
 
 Menu::Menu(Dictionary<std::string, std::string> *dictionary) :
         m_dictionary(dictionary) {
-    std::cout << "Initializing with default key values and words.\n";
-    m_dictionary->add("Hair color", "Blonde");
-    m_dictionary->add("Eye color", "Blue");
-    m_dictionary->add("Favorite Movie", "Rogue One");
-    m_dictionary->add("Favorite Food", "Pizza");
-    m_dictionary->add("Favorite Class", "Lunch");
+//    m_dictionary->add("Hair color", "Blonde");
+//    m_dictionary->add("Eye color", "Blue");
+//    m_dictionary->add("Favorite Movie", "Rogue One");
+//    m_dictionary->add("Favorite Food", "Pizza");
+//    m_dictionary->add("Favorite Class", "Lunch");
 };
 
 void Menu::listOptions() {
@@ -62,7 +61,7 @@ void Menu::listOptions() {
                 do {
                     i++;
                     std::cout << "Please enter the key value to search for: ";
-                    std::getline(std::cin, keyValue, '\n');
+                    std::getline(std::cin, keyValue);
                     word = m_dictionary->getByKey(keyValue);
                     if (i == 3) {
                         std::cout << "You have exceeded maximum attempts (3). Exiting loop.\n";
@@ -105,13 +104,11 @@ void Menu::listOptions() {
 
 Menu::Menu() {
     std::cout << "debug\n";
-    m_dictionary->add("Hair color", "Blonde");
-    m_dictionary->add("Eye color", "Blue");
-    m_dictionary->add("Favorite Movie", "Rogue One");
-    m_dictionary->add("Favorite Food", "Pizza");
-    m_dictionary->add("Favorite Class", "Lunch");
-    std::cout << "debug\n";
-    listOptions();
+//    m_dictionary->add("Hair color", "Blonde");
+//    m_dictionary->add("Eye color", "Blue");
+//    m_dictionary->add("Favorite Movie", "Rogue One");
+//    m_dictionary->add("Favorite Food", "Pizza");
+//    m_dictionary->add("Favorite Class", "Lunch");
 }
 
 //Check that n is within scope of the vector of key values

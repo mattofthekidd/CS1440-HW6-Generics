@@ -193,33 +193,6 @@ Testing/DictionaryTester.cpp.s:
 	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.s
 .PHONY : Testing/DictionaryTester.cpp.s
 
-Testing/KeyValueTester.o: Testing/KeyValueTester.cpp.o
-
-.PHONY : Testing/KeyValueTester.o
-
-# target to build an object file
-Testing/KeyValueTester.cpp.o:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o
-.PHONY : Testing/KeyValueTester.cpp.o
-
-Testing/KeyValueTester.i: Testing/KeyValueTester.cpp.i
-
-.PHONY : Testing/KeyValueTester.i
-
-# target to preprocess a source file
-Testing/KeyValueTester.cpp.i:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.i
-.PHONY : Testing/KeyValueTester.cpp.i
-
-Testing/KeyValueTester.s: Testing/KeyValueTester.cpp.s
-
-.PHONY : Testing/KeyValueTester.s
-
-# target to generate assembly for a file
-Testing/KeyValueTester.cpp.s:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.s
-.PHONY : Testing/KeyValueTester.cpp.s
-
 Testing/testMain.o: Testing/testMain.cpp.o
 
 .PHONY : Testing/testMain.o
@@ -253,7 +226,6 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.o
 	$(MAKE) -f CMakeFiles/GenericDictionary.dir/build.make CMakeFiles/GenericDictionary.dir/main.cpp.o
 .PHONY : main.cpp.o
 
@@ -263,7 +235,6 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.i
 	$(MAKE) -f CMakeFiles/GenericDictionary.dir/build.make CMakeFiles/GenericDictionary.dir/main.cpp.i
 .PHONY : main.cpp.i
 
@@ -273,7 +244,6 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.s
 	$(MAKE) -f CMakeFiles/GenericDictionary.dir/build.make CMakeFiles/GenericDictionary.dir/main.cpp.s
 .PHONY : main.cpp.s
 
@@ -293,9 +263,6 @@ help:
 	@echo "... Testing/DictionaryTester.o"
 	@echo "... Testing/DictionaryTester.i"
 	@echo "... Testing/DictionaryTester.s"
-	@echo "... Testing/KeyValueTester.o"
-	@echo "... Testing/KeyValueTester.i"
-	@echo "... Testing/KeyValueTester.s"
 	@echo "... Testing/testMain.o"
 	@echo "... Testing/testMain.i"
 	@echo "... Testing/testMain.s"
