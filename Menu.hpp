@@ -10,7 +10,8 @@
 
 class Menu {
 public:
-    Menu(Dictionary<std::string, std::string>&);
+    Menu();
+    Menu(Dictionary<std::string, std::string>* dictionary);
 
     void listOptions();
 
@@ -18,10 +19,11 @@ public:
 
     void removeRecord(int x);
 
+    bool isValid(int n);
+
 private:
-    Dictionary<std::string, std::string> *m_dictionary;
-    bool m_quit;
-    enum m_menuOptions {Add = 1, Count = 2, getNthByIndex = 3, getNthByKey = 4, removeByIndex = 5, removeByKey = 6, Quit = 0};
+    Dictionary<std::string, std::string> *m_dictionary = nullptr;
+    enum m_menuOptions {Add = 1, Count = 2, getNthByIndex = 3, getNthByKey = 4, removeByIndex = 5, removeByKey = 6, printAll = 7, Quit = 0};
 };
 
 //Menu::Menu(Dictionary<std::string, std::string>& dict) :

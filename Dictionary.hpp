@@ -21,6 +21,7 @@ public:
     void add(K keyValue, W word);
     void printDict() const;
     void removeByIndex(int n);
+    void removeByKey(const K& k);
     std::string getByIndex(int n) const;
     std::string getByKey(const K&) const;
 private:
@@ -34,12 +35,14 @@ template <typename K, typename W>
 Dictionary<K, W>::Dictionary() :
         m_size(10)
 {
+    m_list.reserve(10);
 }
 
 template <typename K, typename W>
 Dictionary<K, W>::Dictionary(int n) :
         m_size(n)
 {
+    m_list.reserve(n);
 };
 
 template<typename K, typename W>
@@ -70,7 +73,7 @@ void Dictionary<K, W>::add(K keyValue, W word) {
 template<typename K, typename W>
 void Dictionary<K, W>::printDict() const {
     for(auto i = 0; i < m_list.size(); i++) {
-        std::cout << m_list[i] << std::endl;
+        std::cout << i+1 << ". " << m_list[i] << std::endl;
     }
 }
 
@@ -80,6 +83,15 @@ void Dictionary<K, W>::removeByIndex(int n) {
         m_list.erase(m_list.begin()+(n-1));
     }
 }
+
+template<typename K, typename W>
+void Dictionary<K, W>::removeByKey(const K &k) {
+    for(auto i = 0; i < m_list.size(); i++) {
+        if(m_list[i].getKeyValue() == k) {
+            m_list.erase(m_list.begin()+(i));
+        }
+    }
+};
 
 template<typename K, typename W>
 bool Dictionary<K, W>::isValid(int n) {
@@ -94,11 +106,7 @@ bool Dictionary<K, W>::isValid() {
 //returns total words + keyValues currently.
 template<typename K, typename W>
 int Dictionary<K, W>::getCount() const {
-    auto sum = 0;
-    for(auto i = 0; i < m_list.size(); i++) {
-        sum += m_list[i].getCount();
-    }
-    return m_list.size() + sum;
+    return m_list.size();
 }
 
 template<typename K, typename W>
@@ -112,7 +120,6 @@ std::string Dictionary<K, W>::getByKey(const K& k) const {
                 found = true;
             }
         }
-
     }
     if(!found) {
         return "not_found";
@@ -123,6 +130,7 @@ std::string Dictionary<K, W>::getByKey(const K& k) const {
 template<typename K, typename W>
 std::string Dictionary<K, W>::getByIndex(int n) const {
     return std::string();
-};
+}
+
 
 #endif //HW6_GENERICS_DICTIONARY_HPP

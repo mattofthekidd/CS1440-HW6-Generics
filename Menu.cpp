@@ -5,37 +5,37 @@
 #include "Menu.hpp"
 #include "Dictionary.hpp"
 
-Menu::Menu(Dictionary<std::string, std::string>& dict) :
-        m_dictionary(&dict),
-        m_quit(false)
+Menu::Menu(Dictionary<std::string, std::string>* dictionary) :
+        m_dictionary(dictionary)
 {
-    std::cout << "debug\n";
     m_dictionary->add("Hair color", "Blonde");
     m_dictionary->add("Eye color", "Blue");
     m_dictionary->add("Favorite Movie", "Rogue One");
     m_dictionary->add("Favorite Food","Pizza");
     m_dictionary->add("Favorite Class", "Lunch");
-    std::cout << "debug\n";
     listOptions();
-}
+};
 
 void Menu::listOptions() {
     int input = 0, i = 0;
+    bool cont = false;
     std::string word = "";
     std::string keyValue = "";
+    while(!cont) {
     do {
-        std::cout << "1. Add Record\n"
+        std::cout << "\n1. Add Record\n"
                   << "2. Get Count\n"
                   << "3. Get Value by Index #\n"
                   << "4. Get Value by Key Value\n"
-                  << "5. Remove by Index\n"
+                  << "5. Remove by Index #\n"
                   << "6. Remove by Key Value\n"
+                  << "7. Print entire dictionary\n"
                   << "0. Quit\n"
                   << "enter choice (0-6): ";
         std::cin >> input;
-    } while(input > 6 && input < 0);
+        std::cout << "\n";
+    } while(input > 7 && input < 0);
 
-    while(!m_quit) {
         switch (input) {
             case Add:
                 std::cout << "Please enter a key value: ";
@@ -45,9 +45,15 @@ void Menu::listOptions() {
                 m_dictionary->add(keyValue, word);
                 break;
             case Count:
-            std::cout << "Current count: " << m_dictionary->getCount() << std::endl;
+                std::cout << "\nCurrent count: " << m_dictionary->getCount() << std::endl;
                 break;
             case getNthByIndex:
+                input = 0;
+                do {
+                    std::cout << "\nEnter a integer value(1-" << m_dictionary->getCount() << "): ";
+                    std::cin >> input;
+                } while(!isValid(input));
+                m_dictionary->getByIndex(input);
                 break;
             case getNthByKey:
                 keyValue = "";
@@ -57,12 +63,13 @@ void Menu::listOptions() {
                     std::cout << "Please enter the key value to search for: ";
                     std::getline(std::cin, keyValue, '\n');
                     word = m_dictionary->getByKey(keyValue);
-                } while(word == "not_found" || i < 4);
+                    if(i == 3) {
+                        std::cout << "You have exceeded maximum attempts (3). Exiting loop.\n";
+                        break;
+                    }
+                } while(word == "not_found");
                 if(word != "not_found") {
                     std::cout << word << std::endl;
-                }
-                else {
-                    std::cout << "You have exceeded maximum attempts (3). Exiting loop.\n";
                 }
                 break;
             case removeByIndex:
@@ -75,8 +82,11 @@ void Menu::listOptions() {
                 break;
             case removeByKey:
                 break;
+            case printAll:
+                m_dictionary->printDict();
+                break;
             case Quit:
-                m_quit = true;
+                cont = true;
                 break;
             default:break;
         }
@@ -90,6 +100,22 @@ void Menu::addRecord() {
 
 void Menu::removeRecord(int x) {
 
+}
+
+Menu::Menu() {
+    std::cout << "debug\n";
+    m_dictionary->add("Hair color", "Blonde");
+    m_dictionary->add("Eye color", "Blue");
+    m_dictionary->add("Favorite Movie", "Rogue One");
+    m_dictionary->add("Favorite Food","Pizza");
+    m_dictionary->add("Favorite Class", "Lunch");
+    std::cout << "debug\n";
+    listOptions();
+}
+
+//Check that n is within scope of the vector of key values
+bool Menu::isValid(int n) {
+    return (n <= m_dictionary->getCount() && n >= 0);
 }
 
 //

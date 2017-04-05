@@ -8,6 +8,7 @@
 
 int main() {
 typedef Dictionary<std::string, std::string> dict;
+    dict *myDictionary;
     int input = 0;
     std::cout << "Welcome to the Dictionary App.";
     do {
@@ -16,12 +17,13 @@ typedef Dictionary<std::string, std::string> dict;
     } while(input < 0);
     if(input == 0) {
         std::cout << "Size was set to 0, we will auto allocate the size.\n";
-        dict myDictionary;
+        myDictionary = new dict();
     }
     else {
-        dict myDictionary(input);
+        myDictionary = new dict(input);
     }
 
-    Menu(myDictionary);
+    Menu menu(myDictionary);
+    menu.listOptions();
     return 0;
 }
