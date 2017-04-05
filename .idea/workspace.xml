@@ -43,8 +43,8 @@
           <file leaf-file-name="Menu.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Menu.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="319">
-                  <caret line="115" column="58" lean-forward="false" selection-start-line="115" selection-start-column="58" selection-end-line="115" selection-end-column="58" />
+                <state relative-caret-position="210">
+                  <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
                   <folding>
                     <element signature="e#45#64#0" expanded="true" />
                   </folding>
@@ -56,11 +56,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Menu.hpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Menu.hpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Menu.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="294">
-                  <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+                <state relative-caret-position="364">
+                  <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
                   <folding>
                     <element signature="e#106#125#0" expanded="true" />
                   </folding>
@@ -68,25 +68,26 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Dictionary.hpp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Dictionary.hpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Dictionary.hpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="235">
-                  <caret line="97" column="35" lean-forward="true" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+                <state relative-caret-position="508">
+                  <caret line="127" column="46" lean-forward="true" selection-start-line="127" selection-start-column="46" selection-end-line="127" selection-end-column="46" />
                   <folding>
                     <element signature="e#117#134#0" expanded="true" />
-                    <element signature="e#228#252#0" expanded="true" />
-                    <element signature="e#679#703#0" expanded="true" />
-                    <element signature="e#794#818#0" expanded="true" />
-                    <element signature="e#912#936#0" expanded="true" />
-                    <element signature="e#1518#1542#0" expanded="true" />
-                    <element signature="e#1709#1733#0" expanded="true" />
-                    <element signature="e#1862#1886#0" expanded="true" />
-                    <element signature="e#2099#2123#0" expanded="true" />
-                    <element signature="e#2216#2240#0" expanded="true" />
-                    <element signature="e#2364#2388#0" expanded="true" />
-                    <element signature="e#2467#2491#0" expanded="true" />
-                    <element signature="e#2946#2970#0" expanded="true" />
+                    <element signature="e#249#273#0" expanded="true" />
+                    <element signature="e#735#759#0" expanded="true" />
+                    <element signature="e#829#853#0" expanded="true" />
+                    <element signature="e#927#951#0" expanded="true" />
+                    <element signature="e#1533#1557#0" expanded="true" />
+                    <element signature="e#1724#1748#0" expanded="true" />
+                    <element signature="e#1877#1901#0" expanded="true" />
+                    <element signature="e#2121#2145#0" expanded="true" />
+                    <element signature="e#2238#2262#0" expanded="true" />
+                    <element signature="e#2367#2391#0" expanded="true" />
+                    <element signature="e#2470#2494#0" expanded="true" />
+                    <element signature="e#2956#2980#0" expanded="true" />
+                    <element signature="e#3137#3161#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -124,8 +125,8 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/KeyValue.hpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/Dictionary.hpp" />
         <option value="$PROJECT_DIR$/Menu.hpp" />
+        <option value="$PROJECT_DIR$/Dictionary.hpp" />
         <option value="$PROJECT_DIR$/Menu.cpp" />
       </list>
     </option>
@@ -369,12 +370,12 @@
       <option name="presentableId" value="Default" />
       <updated>1491251234036</updated>
       <workItem from="1491251236114" duration="4311000" />
-      <workItem from="1491255793290" duration="21001000" />
+      <workItem from="1491255793290" duration="22646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25312000" />
+    <option name="totallyTimeSpent" value="26957000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -463,18 +464,19 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#117#134#0" expanded="true" />
-            <element signature="e#228#252#0" expanded="true" />
-            <element signature="e#679#703#0" expanded="true" />
-            <element signature="e#794#818#0" expanded="true" />
-            <element signature="e#912#936#0" expanded="true" />
-            <element signature="e#1518#1542#0" expanded="true" />
-            <element signature="e#1709#1733#0" expanded="true" />
-            <element signature="e#1862#1886#0" expanded="true" />
-            <element signature="e#2099#2123#0" expanded="true" />
-            <element signature="e#2216#2240#0" expanded="true" />
-            <element signature="e#2364#2388#0" expanded="true" />
-            <element signature="e#2467#2491#0" expanded="true" />
-            <element signature="e#2946#2970#0" expanded="true" />
+            <element signature="e#249#273#0" expanded="true" />
+            <element signature="e#735#759#0" expanded="true" />
+            <element signature="e#829#853#0" expanded="true" />
+            <element signature="e#927#951#0" expanded="true" />
+            <element signature="e#1533#1557#0" expanded="true" />
+            <element signature="e#1724#1748#0" expanded="true" />
+            <element signature="e#1877#1901#0" expanded="true" />
+            <element signature="e#2121#2145#0" expanded="true" />
+            <element signature="e#2238#2262#0" expanded="true" />
+            <element signature="e#2367#2391#0" expanded="true" />
+            <element signature="e#2470#2494#0" expanded="true" />
+            <element signature="e#2956#2980#0" expanded="true" />
+            <element signature="e#3137#3161#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -575,42 +577,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dictionary.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="97" column="35" lean-forward="true" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
-          <folding>
-            <element signature="e#117#134#0" expanded="true" />
-            <element signature="e#228#252#0" expanded="true" />
-            <element signature="e#679#703#0" expanded="true" />
-            <element signature="e#794#818#0" expanded="true" />
-            <element signature="e#912#936#0" expanded="true" />
-            <element signature="e#1518#1542#0" expanded="true" />
-            <element signature="e#1709#1733#0" expanded="true" />
-            <element signature="e#1862#1886#0" expanded="true" />
-            <element signature="e#2099#2123#0" expanded="true" />
-            <element signature="e#2216#2240#0" expanded="true" />
-            <element signature="e#2364#2388#0" expanded="true" />
-            <element signature="e#2467#2491#0" expanded="true" />
-            <element signature="e#2946#2970#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Menu.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="364">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
           <folding>
             <element signature="e#106#125#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Dictionary.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="127" column="46" lean-forward="true" selection-start-line="127" selection-start-column="46" selection-end-line="127" selection-end-column="46" />
+          <folding>
+            <element signature="e#117#134#0" expanded="true" />
+            <element signature="e#249#273#0" expanded="true" />
+            <element signature="e#735#759#0" expanded="true" />
+            <element signature="e#829#853#0" expanded="true" />
+            <element signature="e#927#951#0" expanded="true" />
+            <element signature="e#1533#1557#0" expanded="true" />
+            <element signature="e#1724#1748#0" expanded="true" />
+            <element signature="e#1877#1901#0" expanded="true" />
+            <element signature="e#2121#2145#0" expanded="true" />
+            <element signature="e#2238#2262#0" expanded="true" />
+            <element signature="e#2367#2391#0" expanded="true" />
+            <element signature="e#2470#2494#0" expanded="true" />
+            <element signature="e#2956#2980#0" expanded="true" />
+            <element signature="e#3137#3161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Menu.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="115" column="58" lean-forward="false" selection-start-line="115" selection-start-column="58" selection-end-line="115" selection-end-column="58" />
+        <state relative-caret-position="210">
+          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
           <folding>
             <element signature="e#45#64#0" expanded="true" />
           </folding>

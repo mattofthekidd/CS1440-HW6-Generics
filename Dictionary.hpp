@@ -7,6 +7,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <algorithm>
 #include <sstream>
 #include "KeyValue.hpp"
 
@@ -25,23 +26,19 @@ public:
     std::string getByIndex(int n) const;
     std::string getByKey(const K&) const;
 private:
-    int m_size;
     std::vector< KeyValue<K> > m_list;
+    bool isEqual(const K& lhs, const K& rhs)const;
     bool isValid(int n);
     bool isValid();
 };
 
 template <typename K, typename W>
-Dictionary<K, W>::Dictionary() :
-        m_size(10)
-{
+Dictionary<K, W>::Dictionary() {
     m_list.reserve(10);
 }
 
 template <typename K, typename W>
-Dictionary<K, W>::Dictionary(int n) :
-        m_size(n)
-{
+Dictionary<K, W>::Dictionary(int n) {
     m_list.reserve(n);
 };
 
@@ -87,7 +84,7 @@ void Dictionary<K, W>::removeByIndex(int n) {
 template<typename K, typename W>
 void Dictionary<K, W>::removeByKey(const K &k) {
     for(auto i = 0; i < m_list.size(); i++) {
-        if(m_list[i].getKeyValue() == k) {
+        if(isEqual(m_list[i].getKeyValue(), k)) {
             m_list.erase(m_list.begin()+(i));
         }
     }
@@ -103,7 +100,7 @@ bool Dictionary<K, W>::isValid() {
     return (m_list.size() > 0);
 }
 
-//returns total words + keyValues currently.
+//returns total keyValues
 template<typename K, typename W>
 int Dictionary<K, W>::getCount() const {
     return m_list.size();
@@ -114,7 +111,7 @@ std::string Dictionary<K, W>::getByKey(const K& k) const {
     std::ostringstream os;
     bool found = false;
     for(auto i = 0; i < m_list.size(); i++) {
-        if(m_list[i].getKeyValue() == k) {
+        if(isEqual(m_list[i].getKeyValue(), k)) {
             for(auto j = 0; j < m_list[i].getCount(); j++) {
                 os << m_list[i].getWordByIndex(0);
                 found = true;
@@ -129,7 +126,16 @@ std::string Dictionary<K, W>::getByKey(const K& k) const {
 
 template<typename K, typename W>
 std::string Dictionary<K, W>::getByIndex(int n) const {
-    return std::string();
+    std::string temp = m_list[n].getKeyValue();
+    return temp + ", " + getByKey(temp);
+}
+
+template<typename K, typename W>
+bool Dictionary<K, W>::isEqual(const K& lhs, const K& rhs)const {
+    std::string tempLeft = lhs, tempRight = rhs;
+    std::transform(tempLeft.begin(), tempLeft.end(), tempLeft.begin(), ::tolower);
+    std::transform(tempRight.begin(), tempRight.end(), tempRight.begin(), ::tolower);
+    return (tempLeft == tempRight);
 }
 
 

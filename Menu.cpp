@@ -8,6 +8,7 @@
 Menu::Menu(Dictionary<std::string, std::string>* dictionary) :
         m_dictionary(dictionary)
 {
+    std::cout << "Initializing with default key values and words.\n";
     m_dictionary->add("Hair color", "Blonde");
     m_dictionary->add("Eye color", "Blue");
     m_dictionary->add("Favorite Movie", "Rogue One");
@@ -23,7 +24,7 @@ void Menu::listOptions() {
     std::string keyValue = "";
     while(!cont) {
     do {
-        std::cout << "\n1. Add Record\n"
+        std::cout << "1. Add Record\n"
                   << "2. Get Count\n"
                   << "3. Get Value by Index #\n"
                   << "4. Get Value by Key Value\n"
@@ -31,7 +32,7 @@ void Menu::listOptions() {
                   << "6. Remove by Key Value\n"
                   << "7. Print entire dictionary\n"
                   << "0. Quit\n"
-                  << "enter choice (0-6): ";
+                  << "enter choice (0-7): ";
         std::cin >> input;
         std::cout << "\n";
     } while(input > 7 && input < 0);
@@ -45,15 +46,16 @@ void Menu::listOptions() {
                 m_dictionary->add(keyValue, word);
                 break;
             case Count:
-                std::cout << "\nCurrent count: " << m_dictionary->getCount() << std::endl;
+                std::cout << "Current count: " << m_dictionary->getCount() << std::endl;
                 break;
             case getNthByIndex:
                 input = 0;
                 do {
-                    std::cout << "\nEnter a integer value(1-" << m_dictionary->getCount() << "): ";
+                    std::cout << "Enter a integer value(1-" << m_dictionary->getCount() << "): ";
                     std::cin >> input;
+                    input--;
                 } while(!isValid(input));
-                m_dictionary->getByIndex(input);
+                std::cout << m_dictionary->getByIndex(input) << std::endl;
                 break;
             case getNthByKey:
                 keyValue = "";
@@ -86,6 +88,7 @@ void Menu::listOptions() {
                 m_dictionary->printDict();
                 break;
             case Quit:
+                std::cout << "Quitting\n";
                 cont = true;
                 break;
             default:break;
