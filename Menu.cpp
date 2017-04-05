@@ -13,7 +13,6 @@ Menu::Menu(Dictionary<std::string, std::string> *dictionary) :
     m_dictionary->add("Favorite Movie", "Rogue One");
     m_dictionary->add("Favorite Food", "Pizza");
     m_dictionary->add("Favorite Class", "Lunch");
-    listOptions();
 };
 
 void Menu::listOptions() {
@@ -103,13 +102,6 @@ void Menu::listOptions() {
 
 }
 
-void Menu::addRecord() {
-
-}
-
-void Menu::removeRecord(int x) {
-
-}
 
 Menu::Menu() {
     std::cout << "debug\n";

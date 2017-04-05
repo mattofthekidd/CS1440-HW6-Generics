@@ -111,71 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named HW6_Generics
+# Target rules for targets named Test
 
 # Build rule for target.
-HW6_Generics: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 HW6_Generics
-.PHONY : HW6_Generics
+Test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Test
+.PHONY : Test
 
 # fast build rule for target.
-HW6_Generics/fast:
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/build
-.PHONY : HW6_Generics/fast
+Test/fast:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/build
+.PHONY : Test/fast
 
-Dictionary.o: Dictionary.cpp.o
+#=============================================================================
+# Target rules for targets named GenericDictionary
 
-.PHONY : Dictionary.o
+# Build rule for target.
+GenericDictionary: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 GenericDictionary
+.PHONY : GenericDictionary
 
-# target to build an object file
-Dictionary.cpp.o:
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o
-.PHONY : Dictionary.cpp.o
-
-Dictionary.i: Dictionary.cpp.i
-
-.PHONY : Dictionary.i
-
-# target to preprocess a source file
-Dictionary.cpp.i:
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/Dictionary.cpp.i
-.PHONY : Dictionary.cpp.i
-
-Dictionary.s: Dictionary.cpp.s
-
-.PHONY : Dictionary.s
-
-# target to generate assembly for a file
-Dictionary.cpp.s:
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/Dictionary.cpp.s
-.PHONY : Dictionary.cpp.s
-
-KeyValue.o: KeyValue.cpp.o
-
-.PHONY : KeyValue.o
-
-# target to build an object file
-KeyValue.cpp.o:
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o
-.PHONY : KeyValue.cpp.o
-
-KeyValue.i: KeyValue.cpp.i
-
-.PHONY : KeyValue.i
-
-# target to preprocess a source file
-KeyValue.cpp.i:
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/KeyValue.cpp.i
-.PHONY : KeyValue.cpp.i
-
-KeyValue.s: KeyValue.cpp.s
-
-.PHONY : KeyValue.s
-
-# target to generate assembly for a file
-KeyValue.cpp.s:
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/KeyValue.cpp.s
-.PHONY : KeyValue.cpp.s
+# fast build rule for target.
+GenericDictionary/fast:
+	$(MAKE) -f CMakeFiles/GenericDictionary.dir/build.make CMakeFiles/GenericDictionary.dir/build
+.PHONY : GenericDictionary/fast
 
 Menu.o: Menu.cpp.o
 
@@ -183,7 +142,8 @@ Menu.o: Menu.cpp.o
 
 # target to build an object file
 Menu.cpp.o:
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/Menu.cpp.o
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Menu.cpp.o
+	$(MAKE) -f CMakeFiles/GenericDictionary.dir/build.make CMakeFiles/GenericDictionary.dir/Menu.cpp.o
 .PHONY : Menu.cpp.o
 
 Menu.i: Menu.cpp.i
@@ -192,7 +152,8 @@ Menu.i: Menu.cpp.i
 
 # target to preprocess a source file
 Menu.cpp.i:
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/Menu.cpp.i
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Menu.cpp.i
+	$(MAKE) -f CMakeFiles/GenericDictionary.dir/build.make CMakeFiles/GenericDictionary.dir/Menu.cpp.i
 .PHONY : Menu.cpp.i
 
 Menu.s: Menu.cpp.s
@@ -201,8 +162,90 @@ Menu.s: Menu.cpp.s
 
 # target to generate assembly for a file
 Menu.cpp.s:
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/Menu.cpp.s
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Menu.cpp.s
+	$(MAKE) -f CMakeFiles/GenericDictionary.dir/build.make CMakeFiles/GenericDictionary.dir/Menu.cpp.s
 .PHONY : Menu.cpp.s
+
+Testing/DictionaryTester.o: Testing/DictionaryTester.cpp.o
+
+.PHONY : Testing/DictionaryTester.o
+
+# target to build an object file
+Testing/DictionaryTester.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o
+.PHONY : Testing/DictionaryTester.cpp.o
+
+Testing/DictionaryTester.i: Testing/DictionaryTester.cpp.i
+
+.PHONY : Testing/DictionaryTester.i
+
+# target to preprocess a source file
+Testing/DictionaryTester.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.i
+.PHONY : Testing/DictionaryTester.cpp.i
+
+Testing/DictionaryTester.s: Testing/DictionaryTester.cpp.s
+
+.PHONY : Testing/DictionaryTester.s
+
+# target to generate assembly for a file
+Testing/DictionaryTester.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.s
+.PHONY : Testing/DictionaryTester.cpp.s
+
+Testing/KeyValueTester.o: Testing/KeyValueTester.cpp.o
+
+.PHONY : Testing/KeyValueTester.o
+
+# target to build an object file
+Testing/KeyValueTester.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o
+.PHONY : Testing/KeyValueTester.cpp.o
+
+Testing/KeyValueTester.i: Testing/KeyValueTester.cpp.i
+
+.PHONY : Testing/KeyValueTester.i
+
+# target to preprocess a source file
+Testing/KeyValueTester.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.i
+.PHONY : Testing/KeyValueTester.cpp.i
+
+Testing/KeyValueTester.s: Testing/KeyValueTester.cpp.s
+
+.PHONY : Testing/KeyValueTester.s
+
+# target to generate assembly for a file
+Testing/KeyValueTester.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.s
+.PHONY : Testing/KeyValueTester.cpp.s
+
+Testing/testMain.o: Testing/testMain.cpp.o
+
+.PHONY : Testing/testMain.o
+
+# target to build an object file
+Testing/testMain.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/testMain.cpp.o
+.PHONY : Testing/testMain.cpp.o
+
+Testing/testMain.i: Testing/testMain.cpp.i
+
+.PHONY : Testing/testMain.i
+
+# target to preprocess a source file
+Testing/testMain.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/testMain.cpp.i
+.PHONY : Testing/testMain.cpp.i
+
+Testing/testMain.s: Testing/testMain.cpp.s
+
+.PHONY : Testing/testMain.s
+
+# target to generate assembly for a file
+Testing/testMain.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/testMain.cpp.s
+.PHONY : Testing/testMain.cpp.s
 
 main.o: main.cpp.o
 
@@ -210,7 +253,8 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/GenericDictionary.dir/build.make CMakeFiles/GenericDictionary.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -219,7 +263,8 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/GenericDictionary.dir/build.make CMakeFiles/GenericDictionary.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -228,7 +273,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/GenericDictionary.dir/build.make CMakeFiles/GenericDictionary.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -239,16 +285,20 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... HW6_Generics"
-	@echo "... Dictionary.o"
-	@echo "... Dictionary.i"
-	@echo "... Dictionary.s"
-	@echo "... KeyValue.o"
-	@echo "... KeyValue.i"
-	@echo "... KeyValue.s"
+	@echo "... Test"
+	@echo "... GenericDictionary"
 	@echo "... Menu.o"
 	@echo "... Menu.i"
 	@echo "... Menu.s"
+	@echo "... Testing/DictionaryTester.o"
+	@echo "... Testing/DictionaryTester.i"
+	@echo "... Testing/DictionaryTester.s"
+	@echo "... Testing/KeyValueTester.o"
+	@echo "... Testing/KeyValueTester.i"
+	@echo "... Testing/KeyValueTester.s"
+	@echo "... Testing/testMain.o"
+	@echo "... Testing/testMain.i"
+	@echo "... Testing/testMain.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

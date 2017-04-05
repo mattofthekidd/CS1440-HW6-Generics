@@ -81,57 +81,9 @@ CMakeFiles/HW6_Generics.dir/main.cpp.o.provides: CMakeFiles/HW6_Generics.dir/mai
 CMakeFiles/HW6_Generics.dir/main.cpp.o.provides.build: CMakeFiles/HW6_Generics.dir/main.cpp.o
 
 
-CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o: CMakeFiles/HW6_Generics.dir/flags.make
-CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o: ../Dictionary.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o -c /Users/kidma/CLionProjects/CS1440/HW6-Generics/Dictionary.cpp
-
-CMakeFiles/HW6_Generics.dir/Dictionary.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW6_Generics.dir/Dictionary.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kidma/CLionProjects/CS1440/HW6-Generics/Dictionary.cpp > CMakeFiles/HW6_Generics.dir/Dictionary.cpp.i
-
-CMakeFiles/HW6_Generics.dir/Dictionary.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW6_Generics.dir/Dictionary.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kidma/CLionProjects/CS1440/HW6-Generics/Dictionary.cpp -o CMakeFiles/HW6_Generics.dir/Dictionary.cpp.s
-
-CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o.requires:
-
-.PHONY : CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o.requires
-
-CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o.provides: CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o.requires
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o.provides.build
-.PHONY : CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o.provides
-
-CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o.provides.build: CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o
-
-
-CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o: CMakeFiles/HW6_Generics.dir/flags.make
-CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o: ../KeyValue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o -c /Users/kidma/CLionProjects/CS1440/HW6-Generics/KeyValue.cpp
-
-CMakeFiles/HW6_Generics.dir/KeyValue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW6_Generics.dir/KeyValue.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kidma/CLionProjects/CS1440/HW6-Generics/KeyValue.cpp > CMakeFiles/HW6_Generics.dir/KeyValue.cpp.i
-
-CMakeFiles/HW6_Generics.dir/KeyValue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW6_Generics.dir/KeyValue.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kidma/CLionProjects/CS1440/HW6-Generics/KeyValue.cpp -o CMakeFiles/HW6_Generics.dir/KeyValue.cpp.s
-
-CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o.requires:
-
-.PHONY : CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o.requires
-
-CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o.provides: CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o.requires
-	$(MAKE) -f CMakeFiles/HW6_Generics.dir/build.make CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o.provides.build
-.PHONY : CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o.provides
-
-CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o.provides.build: CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o
-
-
 CMakeFiles/HW6_Generics.dir/Menu.cpp.o: CMakeFiles/HW6_Generics.dir/flags.make
 CMakeFiles/HW6_Generics.dir/Menu.cpp.o: ../Menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HW6_Generics.dir/Menu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HW6_Generics.dir/Menu.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HW6_Generics.dir/Menu.cpp.o -c /Users/kidma/CLionProjects/CS1440/HW6-Generics/Menu.cpp
 
 CMakeFiles/HW6_Generics.dir/Menu.cpp.i: cmake_force
@@ -156,20 +108,16 @@ CMakeFiles/HW6_Generics.dir/Menu.cpp.o.provides.build: CMakeFiles/HW6_Generics.d
 # Object files for target HW6_Generics
 HW6_Generics_OBJECTS = \
 "CMakeFiles/HW6_Generics.dir/main.cpp.o" \
-"CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o" \
-"CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o" \
 "CMakeFiles/HW6_Generics.dir/Menu.cpp.o"
 
 # External object files for target HW6_Generics
 HW6_Generics_EXTERNAL_OBJECTS =
 
 HW6_Generics: CMakeFiles/HW6_Generics.dir/main.cpp.o
-HW6_Generics: CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o
-HW6_Generics: CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o
 HW6_Generics: CMakeFiles/HW6_Generics.dir/Menu.cpp.o
 HW6_Generics: CMakeFiles/HW6_Generics.dir/build.make
 HW6_Generics: CMakeFiles/HW6_Generics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable HW6_Generics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable HW6_Generics"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HW6_Generics.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -178,8 +126,6 @@ CMakeFiles/HW6_Generics.dir/build: HW6_Generics
 .PHONY : CMakeFiles/HW6_Generics.dir/build
 
 CMakeFiles/HW6_Generics.dir/requires: CMakeFiles/HW6_Generics.dir/main.cpp.o.requires
-CMakeFiles/HW6_Generics.dir/requires: CMakeFiles/HW6_Generics.dir/Dictionary.cpp.o.requires
-CMakeFiles/HW6_Generics.dir/requires: CMakeFiles/HW6_Generics.dir/KeyValue.cpp.o.requires
 CMakeFiles/HW6_Generics.dir/requires: CMakeFiles/HW6_Generics.dir/Menu.cpp.o.requires
 
 .PHONY : CMakeFiles/HW6_Generics.dir/requires

@@ -15,10 +15,6 @@ public:
 
     void listOptions();
 
-    void addRecord();
-
-    void removeRecord(int x);
-
     bool isValid(int n);
 
 private:

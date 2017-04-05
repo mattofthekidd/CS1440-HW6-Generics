@@ -48,5 +48,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/HW6_Generics.dir/DependInfo.cmake"
+  "CMakeFiles/Test.dir/DependInfo.cmake"
+  "CMakeFiles/GenericDictionary.dir/DependInfo.cmake"
   )

@@ -1,3 +1,4 @@
 /Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles/HW6_Generics.dir
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles/Test.dir
+/Users/kidma/CLionProjects/CS1440/HW6-Generics/cmake-build-debug/CMakeFiles/GenericDictionary.dir

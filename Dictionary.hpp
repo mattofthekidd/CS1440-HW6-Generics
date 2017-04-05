@@ -27,7 +27,7 @@ public:
     std::string getByKey(const K&) const;
 private:
     int m_count;
-    std::vector< KeyValue<K> > m_list;
+    std::vector< KeyValueTester<K> > m_list;
     bool isEqual(const K& lhs, const K& rhs)const;
     bool isValid(int n);
     bool isValid();
@@ -57,14 +57,14 @@ void Dictionary<K, W>::add(K keyValue, W word) {
 
         }
         if (unique) {
-            KeyValue<K> temp(keyValue, word);
+            KeyValueTester<K> temp(keyValue, word);
             m_list.push_back(temp);
         } else {
             m_list[pos].addWord(word);
         }
     }
     else {
-        KeyValue<K> temp(keyValue, word);
+        KeyValueTester<K> temp(keyValue, word);
         m_list.push_back(temp);
     }
 };
