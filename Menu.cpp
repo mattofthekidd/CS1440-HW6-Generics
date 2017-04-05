@@ -5,14 +5,13 @@
 #include "Menu.hpp"
 #include "Dictionary.hpp"
 
-Menu::Menu(Dictionary<std::string, std::string>* dictionary) :
-        m_dictionary(dictionary)
-{
+Menu::Menu(Dictionary<std::string, std::string> *dictionary) :
+        m_dictionary(dictionary) {
     std::cout << "Initializing with default key values and words.\n";
     m_dictionary->add("Hair color", "Blonde");
     m_dictionary->add("Eye color", "Blue");
     m_dictionary->add("Favorite Movie", "Rogue One");
-    m_dictionary->add("Favorite Food","Pizza");
+    m_dictionary->add("Favorite Food", "Pizza");
     m_dictionary->add("Favorite Class", "Lunch");
     listOptions();
 };
@@ -22,27 +21,28 @@ void Menu::listOptions() {
     bool cont = false;
     std::string word = "";
     std::string keyValue = "";
-    while(!cont) {
-    do {
-        std::cout << "1. Add Record\n"
-                  << "2. Get Count\n"
-                  << "3. Get Value by Index #\n"
-                  << "4. Get Value by Key Value\n"
-                  << "5. Remove by Index #\n"
-                  << "6. Remove by Key Value\n"
-                  << "7. Print entire dictionary\n"
-                  << "0. Quit\n"
-                  << "enter choice (0-7): ";
-        std::cin >> input;
-        std::cout << "\n";
-    } while(input > 7 && input < 0);
+    while (!cont) {
+        do {
+            std::cout << "\n1. Add Record\n"
+                      << "2. Get Count\n"
+                      << "3. Get Value by Index #\n"
+                      << "4. Get Value by Key Value\n"
+                      << "5. Remove by Index #\n"
+                      << "6. Remove by Key Value\n"
+                      << "7. Print Entire Dictionary\n"
+                      << "0. Quit\n"
+                      << "--Enter Choice (0-7): ";
+            std::cin >> input;
+            std::cin.ignore();
+            std::cout << "\n";
+        } while (input > 7 && input < 0);
 
         switch (input) {
             case Add:
                 std::cout << "Please enter a key value: ";
-                std::getline(std::cin, keyValue, '\n');
+                std::getline(std::cin, keyValue);
                 std::cout << "Please enter a word: ";
-                std::getline(std::cin, word, '\n');
+                std::getline(std::cin, word);
                 m_dictionary->add(keyValue, word);
                 break;
             case Count:
@@ -54,7 +54,7 @@ void Menu::listOptions() {
                     std::cout << "Enter a integer value(1-" << m_dictionary->getCount() << "): ";
                     std::cin >> input;
                     input--;
-                } while(!isValid(input));
+                } while (!isValid(input));
                 std::cout << m_dictionary->getByIndex(input) << std::endl;
                 break;
             case getNthByKey:
@@ -65,12 +65,12 @@ void Menu::listOptions() {
                     std::cout << "Please enter the key value to search for: ";
                     std::getline(std::cin, keyValue, '\n');
                     word = m_dictionary->getByKey(keyValue);
-                    if(i == 3) {
+                    if (i == 3) {
                         std::cout << "You have exceeded maximum attempts (3). Exiting loop.\n";
                         break;
                     }
-                } while(word == "not_found");
-                if(word != "not_found") {
+                } while (word == "not_found");
+                if (word != "not_found") {
                     std::cout << word << std::endl;
                 }
                 break;
@@ -79,10 +79,15 @@ void Menu::listOptions() {
                 do {
                     std::cout << "Please enter a value from 0 - " << m_dictionary->getCount() << " : ";
                     std::cin >> input;
-                } while(input < 0 && input > m_dictionary->getCount());
+                } while (input < 0 && input > m_dictionary->getCount());
                 m_dictionary->removeByIndex(input);
                 break;
             case removeByKey:
+                std::cout << "Please enter the key value you wish to delete.\n"
+                          << "(Warning, this will also delete all words associated with it!)\n"
+                          << "choice: ";
+                std::getline(std::cin, keyValue);
+                m_dictionary->removeByKey(keyValue);
                 break;
             case printAll:
                 m_dictionary->printDict();
@@ -91,7 +96,8 @@ void Menu::listOptions() {
                 std::cout << "Quitting\n";
                 cont = true;
                 break;
-            default:break;
+            default:
+                break;
         }
     }
 
@@ -110,7 +116,7 @@ Menu::Menu() {
     m_dictionary->add("Hair color", "Blonde");
     m_dictionary->add("Eye color", "Blue");
     m_dictionary->add("Favorite Movie", "Rogue One");
-    m_dictionary->add("Favorite Food","Pizza");
+    m_dictionary->add("Favorite Food", "Pizza");
     m_dictionary->add("Favorite Class", "Lunch");
     std::cout << "debug\n";
     listOptions();

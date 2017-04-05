@@ -26,10 +26,12 @@ public:
     std::string getByIndex(int n) const;
     std::string getByKey(const K&) const;
 private:
+    int m_count;
     std::vector< KeyValue<K> > m_list;
     bool isEqual(const K& lhs, const K& rhs)const;
     bool isValid(int n);
     bool isValid();
+    void determineSize();
 };
 
 template <typename K, typename W>
@@ -103,6 +105,7 @@ bool Dictionary<K, W>::isValid() {
 //returns total keyValues
 template<typename K, typename W>
 int Dictionary<K, W>::getCount() const {
+
     return m_list.size();
 }
 
@@ -113,7 +116,8 @@ std::string Dictionary<K, W>::getByKey(const K& k) const {
     for(auto i = 0; i < m_list.size(); i++) {
         if(isEqual(m_list[i].getKeyValue(), k)) {
             for(auto j = 0; j < m_list[i].getCount(); j++) {
-                os << m_list[i].getWordByIndex(0);
+                os << m_list[i].getWordByIndex(j) << "\n";
+
                 found = true;
             }
         }
@@ -136,6 +140,16 @@ bool Dictionary<K, W>::isEqual(const K& lhs, const K& rhs)const {
     std::transform(tempLeft.begin(), tempLeft.end(), tempLeft.begin(), ::tolower);
     std::transform(tempRight.begin(), tempRight.end(), tempRight.begin(), ::tolower);
     return (tempLeft == tempRight);
+}
+
+template<typename K, typename W>
+void Dictionary<K, W>::determineSize() {
+    int temp = m_count;
+    for(auto i = 0; i < m_list.size(); i++) {
+        if(m_list[i].size() > 1) {
+            temp += m_list[i].size();
+        }
+    }
 }
 
 
