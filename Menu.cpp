@@ -7,11 +7,6 @@
 
 Menu::Menu(Dictionary<std::string, std::string> *dictionary) :
         m_dictionary(dictionary) {
-//    m_dictionary->add("Hair color", "Blonde");
-//    m_dictionary->add("Eye color", "Blue");
-//    m_dictionary->add("Favorite Movie", "Rogue One");
-//    m_dictionary->add("Favorite Food", "Pizza");
-//    m_dictionary->add("Favorite Class", "Lunch");
 };
 
 void Menu::listOptions() {
@@ -57,19 +52,14 @@ void Menu::listOptions() {
                 break;
             case getNthByKey:
                 keyValue = "";
-                i = 0;
-                do {
-                    i++;
                     std::cout << "Please enter the key value to search for: ";
                     std::getline(std::cin, keyValue);
                     word = m_dictionary->getByKey(keyValue);
-                    if (i == 3) {
-                        std::cout << "You have exceeded maximum attempts (3). Exiting loop.\n";
-                        break;
-                    }
-                } while (word == "not_found");
-                if (word != "not_found") {
-                    std::cout << word << std::endl;
+                if (word == "not_found") {
+                    std::cout << "Error! Could not find: " << keyValue << std::endl;
+                }
+                else {
+                    std::cout << keyValue << ", " << word << std::endl;
                 }
                 break;
             case removeByIndex:
@@ -85,7 +75,10 @@ void Menu::listOptions() {
                           << "(Warning, this will also delete all words associated with it!)\n"
                           << "choice: ";
                 std::getline(std::cin, keyValue);
-                m_dictionary->removeByKey(keyValue);
+                try{ m_dictionary->removeByKey(keyValue); }
+                catch(std::exception){
+                    std::cout << "Could not delete key/pair.\n";
+                }
                 break;
             case printAll:
                 m_dictionary->printDict();
@@ -93,6 +86,7 @@ void Menu::listOptions() {
             case Quit:
                 std::cout << "Quitting\n";
                 cont = true;
+                delete m_dictionary;
                 break;
             default:
                 break;
@@ -103,22 +97,9 @@ void Menu::listOptions() {
 
 
 Menu::Menu() {
-    std::cout << "debug\n";
-//    m_dictionary->add("Hair color", "Blonde");
-//    m_dictionary->add("Eye color", "Blue");
-//    m_dictionary->add("Favorite Movie", "Rogue One");
-//    m_dictionary->add("Favorite Food", "Pizza");
-//    m_dictionary->add("Favorite Class", "Lunch");
 }
 
 //Check that n is within scope of the vector of key values
 bool Menu::isValid(int n) {
     return (n <= m_dictionary->getCount() && n >= 0);
 }
-
-//
-//• Add new key/value pairs
-//• Get the count of key/value pairs in the dictionary
-//• Get the nth key/value pair
-//• Look up and get a key/value pair using a key
-//• Remove a key/value pair, using either an index or key

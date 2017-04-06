@@ -11,9 +11,6 @@ CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o: ../KeyValue.hpp
 CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o: ../Testing/DictionaryTester.cpp
 CMakeFiles/Test.dir/Testing/DictionaryTester.cpp.o: ../Testing/DictionaryTester.hpp
 
-CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o: ../Testing/KeyValueTester.cpp
-CMakeFiles/Test.dir/Testing/KeyValueTester.cpp.o: ../Testing/KeyValueTester.hpp
-
 CMakeFiles/Test.dir/Testing/testMain.cpp.o: ../Dictionary.hpp
 CMakeFiles/Test.dir/Testing/testMain.cpp.o: ../KeyValue.hpp
 CMakeFiles/Test.dir/Testing/testMain.cpp.o: ../Testing/DictionaryTester.hpp
